@@ -13,3 +13,6 @@
 - En una de las dos secciones como minimo incorporar la Programacion Orientada a Objetos permitiendo facilitar la generacion de las Tarjetas además de simplificar el mantenimiento
     - Encapsulamiento tiene que ser aplicado
     - Tiene que haber al menos una entidad y la clase `Tarjeta`
+
+
+[Link a la pagina del proyecto](https://erick-c3.github.io/Practica_3-5/caracteristicas.html)
