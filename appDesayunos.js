@@ -9,7 +9,9 @@ const unaTarjeta = new Tarjeta(
     unDesayuno.getFoto()
 );
 
+/* proxima clase 
 const vectorTarjetas = [unaTarjeta,otraTarjeta,tresTarjeta,cuatroTarjeta,unaTarjeta]
+ */
 
 let tarjetasGeneradas = ``;
 
