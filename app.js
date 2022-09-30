@@ -12,6 +12,7 @@ const unaTarjeta = new Tarjeta(
 const otraTarjeta = new Tarjeta("Toffee", "Es jugueton", "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1199242002.jpg?crop=0.666xw:1.00xh;0.201xw,0&resize=480:*");
 
 
+
 document.querySelector("#contenedor-cards").innerHTML =`
     <div class="row">
         <div class="col">

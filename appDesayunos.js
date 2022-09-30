@@ -1,33 +1,43 @@
-import { Desayuno } from "./Desayuno.js";
-import { Tarjeta } from "./Tarjeta.js";
+import { ContenedorTarjetas } from "./ContenedorTarjetas.js";
+import { menuDesayunos } from "./menuDesayuno.js";
 
-const unDesayuno = new Desayuno("Café", "cortado", "https://statics-cuidateplus.marca.com/cms/images/cafe-salud.jpg");
+const unContenedorTarjetas = new ContenedorTarjetas("#contenedor-cards");
 
-const unaTarjeta = new Tarjeta(
+/* unContenedorTarjetas.setIdContenedor("#contenedor-cards"); */
+
+unContenedorTarjetas.agregarTarjetasALaAppCon(menuDesayunos);
+
+
+
+/* const unaTarjeta = new Tarjeta(
     unDesayuno.getNombre(),
     unDesayuno.getTipoPreparacion(),
     unDesayuno.getFoto()
-);
+); */
+
+
+
+/* console.log(  menuDesayunos  ); */
 
 /* proxima clase 
 const vectorTarjetas = [unaTarjeta,otraTarjeta,tresTarjeta,cuatroTarjeta,unaTarjeta]
  */
 
-let tarjetasGeneradas = ``;
+/* let tarjetasGeneradas = ``;
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 200; i++) {
    tarjetasGeneradas += `
-    <div class="col">
+    <div class="col" >
         ${unaTarjeta.generarHtml()}
     </div>
    `
-}
+} */
 
-document.querySelector("#contenedor-cards").innerHTML =`
+/* document.querySelector("#contenedor-cards").innerHTML =`
     <div class="row">
         ${tarjetasGeneradas}
     </div>
-`;
+`; */
 
 
 
