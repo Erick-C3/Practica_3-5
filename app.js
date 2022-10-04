@@ -1,7 +1,12 @@
-import { Gato } from "./Gato.js";
-import { Tarjeta } from "./Tarjeta.js";
+import { ContenedorTarjetas } from "./ContenedorTarjetas.js";
+import { listaMichis } from "./listaMichis.js";
 
-const unMichi = new Gato("Chucky", "Es de comer mucho", "https://static6.depositphotos.com/1030334/671/i/600/depositphotos_6716219-stock-photo-kitten.jpg");
+const contenedorTarjetasMichis = new ContenedorTarjetas("#contenedor-cards");
+/*varias lineas de codigo */
+contenedorTarjetasMichis.agregarTarjetasALaAppCon(listaMichis);
+
+
+/* const unMichi = new Gato("Chucky", "Es de comer mucho", "https://static6.depositphotos.com/1030334/671/i/600/depositphotos_6716219-stock-photo-kitten.jpg");
 //una tarjeta con otro objeto (POO)
 const unaTarjeta = new Tarjeta(
     unMichi.getNombre(),
@@ -22,4 +27,4 @@ document.querySelector("#contenedor-cards").innerHTML =`
             ${otraTarjeta.generarHtml()}
         </div>
     </div>
-`;
+`; */

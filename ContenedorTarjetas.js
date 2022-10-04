@@ -4,6 +4,10 @@ class ContenedorTarjetas{
     #idContenedor = "def id";
     #tarjetas = [];
 
+    /**
+     * Inicializa un objeto ContenedorTarjeta
+     * @param {String} idContenedor en la pagina
+     */
     constructor(idContenedor){
         this.#idContenedor = idContenedor;
     }
@@ -53,20 +57,30 @@ class ContenedorTarjetas{
      * @param {Array} listaContenido para las Tarjetas 
      */
     agregarInfoALasTarjetas(listaContenido){ 
-        for (let i = 0; i < listaContenido.length; i++) {
-            this.#tarjetas.push(
-                new Tarjeta(
-                    listaContenido[i].getNombre(),
-                    listaContenido[i].getTipoPreparacion(),
-                    listaContenido[i].getFoto()
-                )
-            );
-            /*  const unaTarjeta = new Tarjeta(
-                unDesayuno.getNombre(),
-                unDesayuno.getTipoPreparacion(),
-                unDesayuno.getFoto()
-            ); */            
+
+        if( listaContenido[0].constructor.name == "Desayuno" ){
+            for (let i = 0; i < listaContenido.length; i++) {
+                this.#tarjetas.push(
+                    new Tarjeta(
+                        listaContenido[i].getNombre(),
+                        listaContenido[i].getTipoPreparacion(),// .getTipoPreparacion();
+                        listaContenido[i].getFoto()
+                    )
+                );        
+            }
+        }else{
+            for (let i = 0; i < listaContenido.length; i++) {
+                this.#tarjetas.push(
+                    new Tarjeta(
+                        listaContenido[i].getNombre(),
+                        listaContenido[i].getPersonalidad(),// .getTipoPreparacion();
+                        listaContenido[i].getFoto()
+                    )
+                );        
+            }
         }
+
+        
     }
  }
 

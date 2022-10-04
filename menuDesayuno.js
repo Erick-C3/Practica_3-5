@@ -18,7 +18,8 @@ let menuDesayunos = [
     new Desayuno(
         "Jugo de naranja",
         "exprimido",
-        "https://recetatipica.com/wp-content/uploads/2019/03/jugo-de-naranja.jpg")
+        "https://recetatipica.com/wp-content/uploads/2019/03/jugo-de-naranja.jpg"),
+        
 ]
 
 export {menuDesayunos};
