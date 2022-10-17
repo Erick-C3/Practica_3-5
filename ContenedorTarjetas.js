@@ -21,13 +21,13 @@ class ContenedorTarjetas{
      */
     agregarTarjetasALaAppCon(listaContenido){ 
         this.agregarInfoALasTarjetas(listaContenido);
-        this.mostrarTarjetas();
+        this.#mostrarTarjetas();
     }
 
     /**
      * Insertar el html necesario para las tarjetas
      */
-    mostrarTarjetas(){ 
+    #mostrarTarjetas(){ 
         document.querySelector(this.#idContenedor).innerHTML =`
             <div class="row">
                 ${this.generadorTarjetasHtml()}
@@ -57,30 +57,21 @@ class ContenedorTarjetas{
      * @param {Array} listaContenido para las Tarjetas 
      */
     agregarInfoALasTarjetas(listaContenido){ 
-
-        if( listaContenido[0].constructor.name == "Desayuno" ){
-            for (let i = 0; i < listaContenido.length; i++) {
-                this.#tarjetas.push(
-                    new Tarjeta(
-                        listaContenido[i].getNombre(),
-                        listaContenido[i].getTipoPreparacion(),// .getTipoPreparacion();
-                        listaContenido[i].getFoto()
-                    )
-                );        
-            }
-        }else{
-            for (let i = 0; i < listaContenido.length; i++) {
-                this.#tarjetas.push(
-                    new Tarjeta(
-                        listaContenido[i].getNombre(),
-                        listaContenido[i].getPersonalidad(),// .getTipoPreparacion();
-                        listaContenido[i].getFoto()
-                    )
-                );        
-            }
+        //alert("esto es un comportamiento abstracto - ")
+        for (let i = 0; i < listaContenido.length; i++) {
+            this.#tarjetas.push(
+                this.crearTarjetaCon(listaContenido[i])
+            );        
         }
-
         
+    }
+
+    /**
+     * Construye una tarjeta con la info recibida
+     * @param {Object} info para construir la tarjeta
+     */
+    crearTarjetaCon(info){
+        alert("creacion de tarjeta fallo - comportamiento abstracto");
     }
  }
 

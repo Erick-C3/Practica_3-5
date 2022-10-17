@@ -15,6 +15,10 @@ class Tarjeta{
         this.#imagen = imagen;
     }
 
+    /**
+     * Construye una tarjeta en html con la informacion disponible
+     * @returns el html de la tarjeta construida
+     */
     generarHtml(){
         return `
             <div class="card" style="width: 18rem;">
@@ -22,7 +26,7 @@ class Tarjeta{
                 <div class="card-body">
                     <h5 class="card-title">${this.#titulo}</h5>
                     <p class="card-text">${this.#descripcion}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Adoptar</a>
                 </div>
             </div>
         `;

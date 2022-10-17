@@ -1,7 +1,8 @@
+import { ContenedorTarjetasDesayuno } from "./ContenedorTarjetaDesayuno.js";
 import { ContenedorTarjetas } from "./ContenedorTarjetas.js";
 import { menuDesayunos } from "./menuDesayuno.js";
 
-const unContenedorTarjetas = new ContenedorTarjetas("#contenedor-cards");
+const unContenedorTarjetas = new ContenedorTarjetasDesayuno("#contenedor-cards");
 
 /* unContenedorTarjetas.setIdContenedor("#contenedor-cards"); */
 

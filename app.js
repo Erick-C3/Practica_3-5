@@ -1,7 +1,8 @@
 import { ContenedorTarjetas } from "./ContenedorTarjetas.js";
+import { ContenedorTarjetaGatitos } from "./ContenedorTarjetasGatitos.js";
 import { listaMichis } from "./listaMichis.js";
 
-const contenedorTarjetasMichis = new ContenedorTarjetas("#contenedor-cards");
+const contenedorTarjetasMichis = new ContenedorTarjetaGatitos("#contenedor-cards");
 /*varias lineas de codigo */
 contenedorTarjetasMichis.agregarTarjetasALaAppCon(listaMichis);
 
