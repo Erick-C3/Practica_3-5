@@ -1,11 +1,11 @@
-import { ContenedorTarjetasDesayuno } from "./ContenedorTarjetaDesayuno.js";
-import { menuDesayunos } from "./menuDesayuno.js";
+import { ContenedorTarjetaPostres } from "./ContenedorTarjetaPostres.js";
+import { menuPostres } from "./menuPostres.js";
 
-const unContenedorTarjetas = new ContenedorTarjetasDesayuno("#contenedor-cards");
+const unContenedorTarjetas = new ContenedorTarjetaPostres("#contenedor-cards");
 
 /* unContenedorTarjetas.setIdContenedor("#contenedor-cards"); */
 
-unContenedorTarjetas.agregarTarjetasALaAppCon(menuDesayunos);
+unContenedorTarjetas.agregarTarjetasALaAppCon(menuPostres);
 
 
 

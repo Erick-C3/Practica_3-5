@@ -7,6 +7,7 @@ class Tarjeta{
     /**
      * Construye un objeto Tarjeta
      * @param {String} titulo de la tarjeta
+     * @param {String} descripcion de la tarjeta
      * @param {String} imagen de la tarjeta URl
      */
     constructor(titulo, descripcion, imagen){

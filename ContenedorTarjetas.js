@@ -1,4 +1,3 @@
-import { Tarjeta } from "./Tarjeta.js";
 
 class ContenedorTarjetas{ 
     #idContenedor = "def id";

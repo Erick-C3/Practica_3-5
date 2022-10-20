@@ -1,4 +1,3 @@
-import { ContenedorTarjetas } from "./ContenedorTarjetas.js";
 import { ContenedorTarjetaGatitos } from "./ContenedorTarjetasGatitos.js";
 import { listaMichis } from "./listaMichis.js";
 
