@@ -1,5 +1,5 @@
-import { ContenedorTarjetasDesayuno } from "./ContenedorTarjetaDesayuno.js";
-import { menuDesayunos } from "./menuDesayuno.js";
+import { ContenedorTarjetasDesayuno } from "../modelos/subClases/ContenedorTarjetaDesayuno.js";
+import { menuDesayunos } from "../pseudoBD/menuDesayuno.js";
 
 const unContenedorTarjetas = new ContenedorTarjetasDesayuno("#contenedor-cards");
 

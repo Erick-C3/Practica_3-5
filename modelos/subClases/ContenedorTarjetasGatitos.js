@@ -1,6 +1,6 @@
 import { ContenedorTarjetas } from "./ContenedorTarjetas.js";
 import { Gato } from "./Gato.js";
-import { Tarjeta } from "./Tarjeta.js";
+import { TarjetaGatito } from "./TarjetaGatito.js";
 
 class ContenedorTarjetaGatitos extends ContenedorTarjetas{ 
 
@@ -22,10 +22,11 @@ class ContenedorTarjetaGatitos extends ContenedorTarjetas{
      * @returns tarjeta construida con la info
      */
      crearTarjetaCon(info){
-        return new Tarjeta(
+        return new TarjetaGatito(
             info.getNombre(),
             info.getPersonalidad(),// .getTipoPreparacion();
-            info.getFoto()
+            info.getFoto(),
+            "un juguete"
         )
     }
  }

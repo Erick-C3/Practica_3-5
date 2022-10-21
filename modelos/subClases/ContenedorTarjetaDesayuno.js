@@ -1,6 +1,6 @@
-import { ContenedorTarjetas } from "./ContenedorTarjetas.js";
-import { Desayuno } from "./Desayuno.js";
-import { Tarjeta } from "./Tarjeta.js";
+import { ContenedorTarjetas } from "../superClases/ContenedorTarjetas.js";
+import { Desayuno } from "../superClases/Desayuno.js";
+import { TarjetaDesayuno } from "./TarjetaDesayuno.js";
 
 class ContenedorTarjetasDesayuno extends ContenedorTarjetas{ 
 
@@ -23,10 +23,11 @@ class ContenedorTarjetasDesayuno extends ContenedorTarjetas{
      * @returns tarjeta construida con la info
      */
     crearTarjetaCon(info){
-        return new Tarjeta(
+        return new TarjetaDesayuno(
             info.getNombre(),
             info.getTipoPreparacion(),// .getTipoPreparacion();
-            info.getFoto()
+            info.getFoto(),
+            info.getPrecio()
         )
     }
 }

@@ -5,7 +5,7 @@ let menuPostres = [
     new Postre(
         "Cheesecake",
         "frutos rojos",
-        "https://vinomanos.com/wp-content/uploads/2021/01/Chees-min.jpg"
+        "./imagenes/cheesecake.jpg"
     ),
     new Postre(
         "Tres leches",
