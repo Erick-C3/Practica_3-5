@@ -15,4 +15,4 @@
     - Tiene que haber al menos una entidad y la clase `Tarjeta`
 
 
-[Link a la pagina del proyecto](https://erick-c3.github.io/Practica_3-5/caracteristicas.html)
+[Link a la pagina del proyecto](https://erick-c3.github.io/Practica_3-5)
